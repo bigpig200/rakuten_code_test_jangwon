@@ -71,13 +71,18 @@ for($i =0; $i < $len; $i++){
 
 
 $final= array_unique($final);
+
 sort($final);
 
 $f_len = count($final);
+
 echo "Count number : ".$f_len."<p>";
+
 for($f = 0; $f <= count($final) ; $f++){
-echo $final[$f]."  ";
-if($f%$len == $len-1) echo "<p>";
+	
+	echo $final[$f]."  ";
+	if($f%$len == $len-1) echo "<p>";
+
 }
 
 
